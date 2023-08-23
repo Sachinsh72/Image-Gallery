@@ -5,7 +5,7 @@ import './ImageGallery.css'
 function ImageGallery(){
     return(
         <div className="Gallery-wrapper">
-            <h1>Image Gallery</h1>
+            <h1>Gallery</h1>
             <ImageList/>
         </div>
     )
