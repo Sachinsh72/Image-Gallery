@@ -1,23 +1,26 @@
 .image{
     margin: 0 auto;
-    flex-basis: 30%;
+    flex-basis: 20%;
     height: 300px;
     width: 300px;
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center; */
-    margin-top: 4rem;
-}
-.image-name{
-    font-size: large;
-    letter-spacing: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    border: none;
 }
 .image-img{
-    height: 300px;
-    
-    max-height: 80%;
-    margin-top:  1rem;
+    height: 290px;
+    width: 290px;
+    border-radius: 10px;
+    margin: 1rem;
+    cursor: pointer;
+}
+.image-img:hover{
+    height: 280px;
+    width: 280px;
 }
 .image:hover{
-    background-color: rgb(248, 234, 214);
+    border-radius: 10px;
+    background-color: yellow;
+    z-index: 1;
 }

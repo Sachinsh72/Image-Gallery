@@ -3,10 +3,12 @@ import axios from 'axios';
 import './ImageList.css'
 import Image from "../Image/Image";
 
+//image list component
 function ImageList(){
 
     const [imageList, setImageList] = useState([]);
 
+    //useEffect() callback function
     async function downloadImage(){
         
         const response = await axios.get('https://api.slingacademy.com/v1/sample-data/photos?limit=20'); // this downloads list of 10 images
@@ -31,10 +33,12 @@ function ImageList(){
 
     }
 
+    //useEffect() hook
     useEffect(()=>{
         downloadImage();
     }, [])
 
+    //this will return the 20 list on images in image component
     return(
         <div className="image-list-wrapper">
             {

@@ -1,5 +1,6 @@
 import './Image.css'
 
+//single image component
 function Image({title, image}){
     return (
         <div className='image'>

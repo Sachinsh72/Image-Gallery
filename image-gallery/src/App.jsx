@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import ImageGallery from './Component/ImageGallery/ImageGallery'
 
 function App() {
